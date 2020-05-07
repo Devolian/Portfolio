@@ -1,0 +1,146 @@
+body, html {
+    height: 100%;
+    background-color: #f0efe9;
+}
+
+.sidebar {
+    height: 100%;
+    width: 12%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e0e0de;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar hr {
+    width: 80%;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 25px;
+    color: #616161;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #bdbdbd;
+}
+
+.main {
+    margin-left: 12%;
+    font-size: 28px;
+    height: 100%;
+    background-color: #f0efe9;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 65%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.headerpanel {
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    background-color: #e0e0de;
+    text-align: center;
+}
+
+.headerpanel h1 {
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.headerpanel p {
+    font-size: 25px;
+}
+
+.main-body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.fade-in-5 {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+
+.fade-in-10 {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+}
+
+.fade-in-15 {
+    animation: fadeIn ease 15s;
+    -webkit-animation: fadeIn ease 15s;
+    -moz-animation: fadeIn ease 15s;
+    -o-animation: fadeIn ease 15s;
+    -ms-animation: fadeIn ease 15s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@keyframes fadeIn {
+0% {
+    opacity:0;
+}
+100% {
+    opacity:1;
+}
+}
+
+@-moz-keyframes fadeIn {
+0% {
+    opacity:0;
+}
+100% {
+    opacity:1;
+}
+}
+
+@-webkit-keyframes fadeIn {
+0% {
+    opacity:0;
+}
+100% {
+    opacity:1;
+}
+}
+
+@-o-keyframes fadeIn {
+0% {
+    opacity:0;
+}
+100% {
+    opacity:1;
+}
+}
+
+@-ms-keyframes fadeIn {
+0% {
+    opacity:0;
+}
+100% {
+    opacity:1;
+}

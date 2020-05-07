@@ -1,0 +1,27 @@
+/*
+.selector {
+    background-color: darkgrey;
+
+}
+
+.selector button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.selector button:hover {
+    background-color: white;
+}
+
+.selector button.active {
+    background-color: green;
+}
+
+.content {
+    display: none;
+    height: 100%;
+}
+*/
