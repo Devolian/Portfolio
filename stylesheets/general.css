@@ -1,91 +1,53 @@
-body, html {
-    height: 100%;
-    background-color: #f0efe9;
+html, body, h1, h2, h3, h4, h5, p, a {
+    font-family: 'Encode Sans Semi Expanded';
 }
 
-.sidebar-frame {
-    height: 100%;
-    width: 12%;
-}
-
-.sidebar {
-    height: 100%;
-    width: 12%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+/* Dropdown Button */
+.dropbtn {
     background-color: #e0e0de;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.sidebar hr {
-    width: 80%;
-}
-
-.sidebar p {
-    padding: 6px 8px 6px 16px;
-    margin-left: 5%;
-    text-decoration: none;
-    font-size: 25px;
+    font-family: 'Encode Sans Semi Expanded';
     color: #616161;
-    display: block;
-}
-
-.sidebar a:hover {
-    color: #bdbdbd;
-}
-
-.main {
-    margin-left: 12%;
-    font-size: 28px;
-    height: 100%;
-    background-color: #f0efe9;
-}
-
-.main h1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 55px;
-    padding: 4%;
-}
-
-.main p {
-    margin-left: 5%;
-    margin-right: 5%;
     font-size: 25px;
-}
-
-.sidebar img {
-    border-radius: 50%;
-    width: 65%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.headerpanel {
-    margin-top: 0;
-    margin-bottom: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 2%;
+    margin-left: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #d6d6d3;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: relative;
     background-color: #e0e0de;
-    text-align: center;
-}
-
-.headerpanel h1 {
-    padding: 2%;
-    font-weight: bold;
-    font-size: 55px;
-}
-
-.headerpanel p {
-    font-size: 25px;
-    padding: 1%;
-}
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #616161;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
 
 .fade-in-5 {
     animation: fadeIn ease 5s;
@@ -110,8 +72,6 @@ body, html {
     -o-animation: fadeIn ease 15s;
     -ms-animation: fadeIn ease 15s;
 }
-
-
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -160,4 +120,5 @@ body, html {
 }
 100% {
     opacity:1;
+}
 }
