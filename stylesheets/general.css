@@ -122,7 +122,7 @@ html, body, h1, h2, h3, h4, h5, p, a {
 }
 
 @font-face {
-    font-family: "IBTR";
+    font-family: 'IBTR';
     src: url("../fonts/imperln.eot"); /* IE9 Compat Modes */
     src: url("../fonts/imperln.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
       url("../fonts/imperln.otf") format("opentype"), /* Open Type Font */
