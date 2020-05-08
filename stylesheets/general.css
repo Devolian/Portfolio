@@ -1,12 +1,12 @@
 html, body, h1, h2, h3, h4, h5, p, a {
     /*font-family: 'Encode Sans Semi Expanded';*/
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
 }
 
 /* Dropdown Button */
 .dropbtn {
     background-color: #e0e0de;
-    font-family: "Quicksand";
+    font-family: 'Quicksand';
     color: #616161;
     font-size: 25px;
     padding-left: 10%;
