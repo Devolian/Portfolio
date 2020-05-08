@@ -1,12 +1,16 @@
-.sidebar-frame {
+iframe {
     height: 100%;
-    width: 12%;
+    width: 100%;
+    border: 0;
+    position: absolute;
+    padding: 0;
 }
 
 .sidebar {
     height: 100%;
     width: 14%;
     position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -37,7 +41,13 @@
     padding-bottom: 5%;
     border: none;
     cursor: pointer;
+    outline: none;
     width: 100%;
+}
+
+.sidebar button:focus {
+    border: none;
+    outline: none;
 }
 
 .sidebar button:hover {
@@ -53,10 +63,17 @@
     display: block;
 }
 
+.main-page {
+    margin-left: 14%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .main {
-    margin-left: 12%;
     font-size: 28px;
     height: 100%;
+    width: 86%;
+    position: absolute;
     background-color: #f0efe9;
 }
 
@@ -77,11 +94,8 @@
 }
 
 .headerpanel {
-    margin-top: 0;
-    margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 2%;
     background-color: #e0e0de;
     text-align: center;
 }
@@ -96,7 +110,7 @@
 
 .headerpanel p {
     font-size: 25px;
-    padding: 1%;
+    padding-bottom: 2.5%;
     font-family: 'IBTR';
     color: #6b6b6b;
 }
