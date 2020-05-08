@@ -3,6 +3,11 @@ body, html {
     background-color: #f0efe9;
 }
 
+.sidebar-frame {
+    height: 100%;
+    width: 12%;
+}
+
 .sidebar {
     height: 100%;
     width: 12%;
@@ -19,7 +24,7 @@ body, html {
     width: 80%;
 }
 
-.sidebar a {
+.sidebar p {
     padding: 6px 8px 6px 16px;
     margin-left: 5%;
     text-decoration: none;
@@ -39,6 +44,19 @@ body, html {
     background-color: #f0efe9;
 }
 
+.main h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    padding: 4%;
+}
+
+.main p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 25px;
+}
+
 .sidebar img {
     border-radius: 50%;
     width: 65%;
@@ -50,7 +68,7 @@ body, html {
 
 .headerpanel {
     margin-top: 0;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
     padding: 2%;
@@ -59,17 +77,14 @@ body, html {
 }
 
 .headerpanel h1 {
+    padding: 2%;
     font-weight: bold;
     font-size: 55px;
 }
 
 .headerpanel p {
     font-size: 25px;
-}
-
-.main-body {
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 1%;
 }
 
 .fade-in-5 {
@@ -95,6 +110,8 @@ body, html {
     -o-animation: fadeIn ease 15s;
     -ms-animation: fadeIn ease 15s;
 }
+
+
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
