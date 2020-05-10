@@ -1,46 +1,89 @@
 html, body, h1, h2, h3, h4, h5, p, a {
-    /*font-family: 'Encode Sans Semi Expanded';*/
     font-family: 'Quicksand';
 }
 
-  .dropbtn {
-    background-color: #e0e0de;
-    color: #4e4e4e;
-    font-family: 'Quicksand';
-    font-size: 40px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    width: 100%;
-    padding: 3%;
+.main hr {
+    width: 80%;
+    padding-bottom: 3%;
+}
+
+.main {
+    height: 100%;
+    width: 86%;
+    position: absolute;
+    background-color: #f0efe9;
+}
+
+.inner-body {
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.main h1 {
+    text-align: center;
     font-weight: bold;
+    font-family: 'IBTR';
+    font-size: 55px;
+    padding: 4%;
+    color: #4e4e4e;
 }
-  
-.dropbtn:hover {
-    background-color: #d6d6d3;
+
+.main h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'IBTR';
+    padding: 2%;
+    color: #4e4e4e;
 }
-  
-.dropdown {
-    position: relative;
-    display: block;
+
+.main p {
+    font-size: 22px;
+    color: #4e4e4e;
 }
-  
-.dropdown-content {
-    display: none;
-    position: relative;
+
+.headerpanel {
     background-color: #e0e0de;
-    width: 100%;
-    z-index: 1;
+    text-align: center;
+    margin-top: 2%;
 }
-  
-.dropdown-content a {
-    color: #616161;
-    text-decoration: none;
-    display: block;
+
+.headerpanel h1 {
+    padding: 2%;
+    font-weight: bold;
+    font-size: 55px;
+    font-family: 'IBTR';
+    color: #4e4e4e;
 }
-  
-.show {
-    display:block;
+
+.headerpanel p {
+    font-size: 25px;
+    padding-bottom: 2.5%;
+    font-family: 'IBTR';
+    color: #6b6b6b;
+}
+
+.split {
+    float: left;
+}
+
+.one-third {
+    width: 33%;
+}
+
+.two-thirds {
+    width: 67%;
+}
+
+.half {
+    width: 50%;
+}
+
+.image-diagram {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    padding-bottom: 5%;
 }
 
 .fade-in {
@@ -57,11 +100,6 @@ html, body, h1, h2, h3, h4, h5, p, a {
     -moz-animation: fadeIn2 ease-in 2s;
     -o-animation: fadeIn2 ease-in 2s;
     -ms-animation: fadeIn2 ease-in 2s;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }
 
 @keyframes fadeIn {
@@ -122,4 +160,4 @@ html, body, h1, h2, h3, h4, h5, p, a {
       url("../fonts/imperln.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
-  }
+}
