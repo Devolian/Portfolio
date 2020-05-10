@@ -5,7 +5,7 @@ html, body, h1, h2, h3, h4, h5, p, a {
 
   .dropbtn {
     background-color: #e0e0de;
-    color: #616161;
+    color: #4e4e4e;
     font-family: 'Quicksand';
     font-size: 40px;
     border: none;
@@ -16,38 +16,32 @@ html, body, h1, h2, h3, h4, h5, p, a {
     font-weight: bold;
 }
   
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover {
     background-color: #d6d6d3;
-  }
+}
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+.dropdown {
     position: relative;
     display: block;
-  }
+}
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: relative;
     background-color: #e0e0de;
     width: 100%;
     z-index: 1;
-  }
+}
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     color: #616161;
     text-decoration: none;
     display: block;
-  }
+}
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+.show {
+    display:block;
+}
 
 .fade-in {
     animation: fadeIn ease-in 1.5s;
