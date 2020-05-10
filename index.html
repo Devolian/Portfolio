@@ -18,24 +18,24 @@
 <body style="background-color: #f0efe9;">
     
     <div class="sidebar">
-        <a href="pages/home.html" target="page"><img src="images/devon.png"></img></a>
-        <br><hr><br>
-        <a href="pages/home.html" target="page"><button>Home</button></a>
-        <br>
-        <a href="pages/aboutme.html" target="page"><button>About Me</button></a>
-        <br>
-        <a href="pages/resume.html" target="page"><button>Resume</button></a>
-        <br>
-        <a href="pages/contact.html" target="page"><button>Contact</button></a>
+        <a href="pages/home.html" target="page"><img class="profile-img" src="images/devon.png"></img></a>
         <br><hr>
-        <p>Projects :</p>
-        <a href="pages/contact.html" target="page"><button>YT Sound Guesser</button></a>
-        <br>
-        <a href="pages/contact.html" target="page"><button>Neural Network</button></a>
-        <br>
-        <a href="pages/contact.html" target="page"><button>Tweet Aggregator</button></a>
+        <a href="pages/home.html" target="page"><button class="menu-button">Home</button></a>
+        <a href="pages/aboutme.html" target="page"><button class="menu-button">About Me</button></a>
+        <a href="pages/resume.html" target="page"><button class="menu-button">Resume</button></a>
+        <a href="pages/contact.html" target="page"><button class="menu-button">Contact</button></a>
+        <hr>
+        <div class="dropdown">
+            <button onclick="dropdown()" class="dropbtn">Projects <img class="dropdown-img" id="projects" src="images/rightarrow.png"></img></button>
+            <div id="dd" class="dropdown-content">
+                <a href="pages/contact.html" target="page"><button class="menu-list-button">YT Song Guesser</button></a>
+                <a href="pages/contact.html" target="page"><button class="menu-list-button">Neural Network</button></a>
+                <a href="pages/contact.html" target="page"><button class="menu-list-button">Tweet Aggregator</button></a>
+            </div>
+        </div>
+        
     </div>
-    
+
     <div class="main-page">
         <iframe class="body-frame" src="pages/home.html" name="page"></iframe>
     </div>

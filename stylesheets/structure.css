@@ -34,11 +34,22 @@ iframe {
     font-weight: bold;
 }
 
-.sidebar button {
+.menu-button {
     background-color: #e0e0de;
     color: #616161;
-    font-size: 25px;
-    padding-bottom: 5%;
+    font-size: 28px;
+    padding: 3%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+
+.menu-list-button {
+    background-color: #e0e0de;
+    color: #616161;
+    font-size: 20px;
+    padding: 3%;
     border: none;
     cursor: pointer;
     outline: none;
@@ -54,13 +65,19 @@ iframe {
     background-color: #d6d6d3;
 }
 
-.sidebar img {
+.profile-img {
     border-radius: 50%;
     width: 65%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.dropdown-img {
+    width: 12%;
+    height: auto;
+    opacity: 0.62;
 }
 
 .main-page {

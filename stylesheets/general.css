@@ -3,31 +3,28 @@ html, body, h1, h2, h3, h4, h5, p, a {
     font-family: 'Quicksand';
 }
 
-/* Dropdown Button */
-.dropbtn {
+  .dropbtn {
     background-color: #e0e0de;
-    font-family: 'Quicksand';
     color: #616161;
-    font-size: 25px;
-    padding-left: 10%;
-    padding-bottom: 5%;
+    font-family: 'Quicksand';
+    font-size: 40px;
     border: none;
     cursor: pointer;
-  }
+    outline: none;
+    width: 100%;
+    padding: 3%;
+    font-weight: bold;
+}
   
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
     background-color: #d6d6d3;
   }
-
-  .dropdown:hover .dropdown-content{
-      display: block;
-  }
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: block;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -35,7 +32,6 @@ html, body, h1, h2, h3, h4, h5, p, a {
     display: none;
     position: relative;
     background-color: #e0e0de;
-    margin-left: 10%;
     width: 100%;
     z-index: 1;
   }
