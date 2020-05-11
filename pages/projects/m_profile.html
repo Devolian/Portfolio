@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Motion Profiler</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #f0efe9;">
+
+    <div class="main">
+        <h1>Motion Profile Mapper</h1>
+        <hr>
+        <p>
+            In my final year of high school, as lead programmer of FRC Team 3539, my main goal was to develop an application 
+            that creates paths on the field that the robot could read and follow based solely on user input. 
+            In the first 15 seconds of every game, the robot needed to move by itself, and instead of hard-coding 
+            motor speeds and times manually, this application guided the robot along a set path.  This was easier to use and allowed us 
+            to be more versatile during competitions, where the ability to change based on your teammates' needs was essential.
+            Special thanks to our mentor, Mr. VanCamp, who provided framework and was absolutely essential to reaching the end product.
+        </p>
+        <br>
+
+        <div>
+            <div class="split half">
+                <img class="image-diagram" src="../../images/profile_demo.gif"></img>
+            </div>
+            <div class="split half">
+                <h3>The User Interface</h3>
+                <p>
+                    In the game for 2018, there were obstacles on the field (shown as green, red, and yellow boxes) that needed to be traversed 
+                    autonomously.  We could only stand back and watch as the robot moved on its own, without any human input.  All 
+                    robot movement was guided by the paths generated in this program, as seen in the demonstration.
+                    <br><br>
+                    The user creates points on the chart that the robot should follow, and the program uses those points to create two 
+                    separate paths, one for each side of the robot.  
+                    <br><br><br>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="split half">
+                <h3>Velocity Calculation</h3>
+                <p>
+                    After two splines are generated for the left and right sides of the robot, the application then creates a complete  
+                    guide of velocity values that the robot should apply to its motors in order to accurately follow the path.  This was 
+                    an especially difficult task, since the motors have physical limitations beyond what might be mathematically possible.
+                    <br><br>
+                    Some issues that we had to work around were the minor physical differences between motors, the need to ramp-up and ramp-down 
+                    velocities for optimal performance (including battery saving), and possible variations in actual field measurements from competition to competition.
+                    <br><br>
+                    Shown here are the corresponding velocity maps for the left (blue) and right (red) sides of the robot. Turns are indicated 
+                    by an increase in velocity for one side and a decrease in velocity for the other side.
+                </p>
+            </div>
+            <div class="split half">
+                <img class="image-diagram" src="../../images/profile_velocity.PNG"></img>
+            </div>
+        </div>
+
+        <div class="float-left">
+            <h3>Versatility and Proper Programming</h3>
+            <p>
+                During competition, we were often paired with teammates that had autonomous plans that conflicted with ours.  In that case, 
+                instead of having to re-code, debug, and test new plans (which was impossible given competition time constraints), we simply opened 
+                up the motion profile mapper, drew a new line according to their needs, and had everything ready to go within minutes.  This 
+                proved to be critical to our success in many matches.
+                <br><br>
+                One major difference between this project and my other projects at the time was the necessity of programming professionally. 
+                Upon graduation, this application was going to be passed down to future programmers on the team to improve and maintain for years 
+                to come.  Because of that, I needed to make sure that all code that I wrote was clean, easy to follow, and properly documented. 
+                This was where I developed most of my programming ethics, which have influenced the structurse of my future projects. This application 
+                is still used by team programmers today!
+                <br><br>
+            </p>
+        </div>
+
+        <p>
+            Here you can watch our robot following a motion profile path live at the Michigan State Championship.  Watch team 3539 for the 
+            first 15 seconds!
+        </p>
+        <a href="https://youtu.be/NRdkGwCWpzM" target="_blank" class="yt-link">Performance Video</a>
+        <br><br>
+        <!--
+        <p>
+            Here's a link to the GitHub repository for the version of the mapper that I last modified before graduating.
+        </p>
+        <a href="https://github.com/BytingBulldogs3539/Motion-Profile-Mapper" target="_blank" class="yt-link">Archived Repository</a>
+        -->
+        
+    </div>
+
+</body>

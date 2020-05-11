@@ -3,21 +3,17 @@ html, body, h1, h2, h3, h4, h5, p, a {
 }
 
 .main hr {
-    width: 80%;
+    width: 90%;
     padding-bottom: 3%;
 }
 
 .main {
     height: 100%;
-    width: 86%;
     position: absolute;
     background-color: #f0efe9;
-}
-
-.inner-body {
-    height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
 }
 
 .main h1 {
@@ -40,6 +36,14 @@ html, body, h1, h2, h3, h4, h5, p, a {
 .main p {
     font-size: 22px;
     color: #4e4e4e;
+}
+
+.yt-link {
+    font-size: 22px;
+    text-decoration: underline;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 .headerpanel {
@@ -79,12 +83,28 @@ html, body, h1, h2, h3, h4, h5, p, a {
     width: 50%;
 }
 
+.float-left {
+    float: left;
+}
+
 .image-diagram {
     width: 80%;
     height: auto;
     margin-left: 10%;
     padding-bottom: 5%;
 }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f0efe9; 
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #d3d2c8; 
+  }
 
 .fade-in {
     animation: fadeIn ease-in 1.5s;
