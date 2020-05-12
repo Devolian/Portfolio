@@ -20,7 +20,7 @@ html, body, h1, h2, h3, h4, h5, p, a {
     text-align: center;
     font-weight: bold;
     font-family: 'IBTR';
-    font-size: 55px;
+    font-size: 3.5vw;
     padding: 4%;
     color: #4e4e4e;
 }
@@ -34,12 +34,12 @@ html, body, h1, h2, h3, h4, h5, p, a {
 }
 
 .main p {
-    font-size: 22px;
+    font-size: 1.55vw;
     color: #4e4e4e;
 }
 
 .yt-link {
-    font-size: 22px;
+    font-size: 1.335vw;
     text-decoration: underline;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -55,13 +55,13 @@ html, body, h1, h2, h3, h4, h5, p, a {
 .headerpanel h1 {
     padding: 2%;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 3.5vw;
     font-family: 'IBTR';
     color: #4e4e4e;
 }
 
 .headerpanel p {
-    font-size: 25px;
+    font-size: 1.5vw;
     padding-bottom: 2.5%;
     font-family: 'IBTR';
     color: #6b6b6b;

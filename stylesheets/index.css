@@ -6,7 +6,7 @@ html, body, h1, h2, h3, h4, h5, p, a {
     background-color: #e0e0de;
     color: #4e4e4e;
     font-family: 'Quicksand';
-    font-size: 40px;
+    font-size: 2vw;
     border: none;
     cursor: pointer;
     outline: none;
@@ -74,7 +74,7 @@ iframe {
     padding-top: 2%;
     padding-bottom: 2%;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 1.75vw;
     color: #616161;
     display: block;
     text-align: center;
@@ -84,7 +84,7 @@ iframe {
 .menu-button {
     background-color: #e0e0de;
     color: #616161;
-    font-size: 28px;
+    font-size: 1.6vw;
     padding: 3%;
     border: none;
     cursor: pointer;
@@ -99,7 +99,7 @@ iframe {
 .menu-list-button {
     background-color: #e0e0de;
     color: #616161;
-    font-size: 20px;
+    font-size: 1.1vw;
     padding: 3%;
     border: none;
     cursor: pointer;
@@ -139,11 +139,6 @@ iframe {
     margin-left: 14%;
     height: 100%;
     overflow: hidden;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }
 
 @font-face {
