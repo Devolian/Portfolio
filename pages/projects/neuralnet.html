@@ -18,7 +18,7 @@
             <h1>Evolutionary  Neural  Network</h1>
             <hr>
             <p>
-                As an independent project in late high school and early college, I decided to program an 
+                As an ongoing independent project from late high school, I decided to program an 
                 artificially-evolving neural network simulator using basic creatures in a predefined environment.
                 I took inspiration from several other community programmers who made similar programs.  This was my first
                 attempt at using a neural network to facilitate fitness-based evolution.
@@ -29,6 +29,7 @@
         <div class="float-left">
             <div class="split one-third">
                 <img class="image-diagram" src="../../images/map.PNG"></img>
+                <img class="image-diagram" src="../../images/creature.PNG"></img>
             </div>
             <div class="split two-thirds">
                 <h3>The Environment</h3>
@@ -41,7 +42,18 @@
                     Tiles can either be land or water.  Water tiles have no food and no regeneration, so it is extremely 
                     disadvantageous for a creature to remain in the water for a long period of time. The goal of this is 
                     to encourage the evolution of water-avoidant traits.
-                    <br><br><br>
+                    <br>
+                </p>
+                <h3>Meet The Creatures!</h3>
+                <p>
+                    Shown here is an example of a creature in the simulator.  Each creature has several sensors, which help it 
+                    identify certain aspects of the environment, like the amount of food around it or if there is another 
+                    creature nearby.  These sensors are the source of input to the creature's neural network and help determine 
+                    what actions the creature will take.
+                    <br><br>
+                    Creatures that are successful at staying alive and feeding can produce offspring with slightly mutated genes, 
+                    which imitates random genetic variation in humans.
+                    <br><br>
                 </p>
             </div>
         </div>
@@ -84,17 +96,62 @@
         </div>
 
         <div class="float-left">
-            <h3>Observed Traits</h3>
-            <div>
-                <div class="split half">
-                    <p>
-                        temp
-                    </p>
-                </div>
-                <div class="split half">
-                    
-                </div>
+            <div class="split one-third">
+                <img class="image-diagram" src="../../images/avoid_water.gif"></img>
             </div>
+            <div class="split two-thirds">
+                <h3>Observed Traits</h3>
+                <p>
+                    One of the most prevalent traits that can be seen in the simulator is the avoidance of disadvantageous 
+                    tiles. Many creatures, in a map that includes bodies of water, will adapt to avoid water and tiles with 
+                    little food.  Being in these areas is disadvantageous because, while the creatures constantly decay, 
+                    they will have no source of food.
+                    <br><br>
+                    Here is an example of a creature with a neural network that learned to change direction or avoid water 
+                    or foodless tiles completely when it encountered them.  Some creatures tend to back away, some choose to 
+                    speed up to get through, and some exhibit a combination of the two.
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <div class="float-left">
+            <div class="split half">
+                <h3>Creature Count and Gene Evolution</h3>
+                <p>
+                    As the simulation runs, it keeps track of how many creatures were alive and their genes through time. Creatures 
+                    will similar neural networks will have similar colors for easy visual identification. Once certain 
+                    suitable creatures grow in population to dominate the environment, resources become scarce and the population 
+                    decreases, giving rise to new, more suitable populations.
+                    <br><br>
+                </p>
+            </div>
+            <div class="split half">
+                <br><br>
+                <img class="image-diagram" src="../../images/timeline.PNG"></img>
+            </div>
+        </div>
+
+        <div class="float-left">
+            <p>
+                In this example, dark green and dark pink/purple creatures dominated for a period of time. Once resources ran out, 
+                a period of turbulence followed as other more-suitable populations grew out of the scarcity, leading to descendants of the 
+                pink/purple populations to grow.  Once those descendants grew to capacity and used up the newly available resources, 
+                more turbulence ensued which gave rise to yet another more-suitable descendant population of the purple neural 
+                network traits.  This process repeats over and over again and is the driving force behind the neural network evolution.
+                Watching the graphs reflecting this phenomenon in real time is truly fascinating, and I am very proud of these results!
+                <br><br>
+            </p>
+        </div>
+
+        <div class="float-left">
+            <h3>Try it Yourself!</h3>
+            <p>
+                If you are interested, feel free to download and run this simulation for yourself. You can find it on my GitHub page, 
+                which is linked in the menu. I'm sure you will enjoy watching and 
+                interacting with the creatures of the simulation. I hope you enjoy my work!
+                <br><br><br><br>
+            </p>
         </div>
                     
     </div>

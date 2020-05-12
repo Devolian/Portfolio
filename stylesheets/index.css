@@ -92,6 +92,10 @@ iframe {
     width: 100%;
 }
 
+.menu-button:focus {
+    font-weight: bold;
+}
+
 .menu-list-button {
     background-color: #e0e0de;
     color: #616161;
@@ -110,6 +114,10 @@ iframe {
 
 .sidebar button:hover {
     background-color: #d6d6d3;
+}
+
+.dropdown-content button:focus {
+    font-weight: bold;
 }
 
 .profile-img {
