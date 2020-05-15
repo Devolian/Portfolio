@@ -67,6 +67,12 @@ html, body, h1, h2, h3, h4, h5, p, a {
     color: #6b6b6b;
 }
 
+.download-img {
+    width: 8%;
+    height: auto;
+    opacity: 0.70;
+}
+
 .split {
     float: left;
 }
@@ -85,6 +91,54 @@ html, body, h1, h2, h3, h4, h5, p, a {
 
 .float-left {
     float: left;
+}
+
+.full-width {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 5%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 5%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    font-family: 'Quicksand';
+    font-weight: bold;
+}
+
+.send-button {
+    background-color: #e0e0de;
+    color: #616161;
+    font-size: 1.6vw;
+    padding: 0.5% 2% 0.5% 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.embed-pdf {
+    margin-left: 18%;
+    margin-bottom: 5%;
+    height: 100%;
 }
 
 .image-diagram {
