@@ -38,6 +38,11 @@ html, body, h1, h2, h3, h4, h5, p, a {
     color: #4e4e4e;
 }
 
+.main a {
+    font-size: 1.5vw;
+    color: #4e4e4e;
+}
+
 .yt-link {
     font-size: 1.335vw;
     text-decoration: underline;
@@ -68,9 +73,14 @@ html, body, h1, h2, h3, h4, h5, p, a {
 }
 
 .download-img {
-    width: 8%;
+    width: 7%;
     height: auto;
     opacity: 0.70;
+    margin-top: -2%;
+}
+
+.download-img:hover {
+    opacity: 0.40;
 }
 
 .split {
@@ -89,12 +99,28 @@ html, body, h1, h2, h3, h4, h5, p, a {
     width: 50%;
 }
 
+.less-half {
+    width: 48%;
+}
+
 .float-left {
     float: left;
 }
 
+.float-right {
+    float: right;
+}
+
 .full-width {
     width: 100%;
+}
+
+.blue-text {
+    color: #2d30cc;
+}
+
+.red-text {
+    color: #c23b3b;
 }
 
 input {
