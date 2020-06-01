@@ -115,14 +115,6 @@ html, body, h1, h2, h3, h4, h5, p, a {
     width: 100%;
 }
 
-.blue-text {
-    color: #2d30cc;
-}
-
-.red-text {
-    color: #c23b3b;
-}
-
 input {
     width: 100%;
     padding: 5%;
