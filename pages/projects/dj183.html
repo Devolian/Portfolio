@@ -14,13 +14,66 @@
 <body style="background-color: #f0efe9;">
 
     <div class="main">
-        <h1>YouTube Song Guesser</h1>
+        <h1>Song Guesser Web Application</h1>
         <hr>
         <p>
             In my first year at the University of Michigan, my team and I created a website application 
             as a final project called "DJ 183."  The website consisted of several important programming skills: 
-            a back-end python server, a front-end website with HTML, and database utilization.
+            a back-end python server, a front-end website with HTML, information obtained through a public API, and 
+            database utilization. The implementation and features of this project were entirely up to our 
+            group. Unfortunately, this is no longer online for public use to prevent future students from 
+            stealing our code and using it as their own work. However, the code is stored in a private 
+            GitHub repository on my GitHub page (linked in the menu), so I can share it upon request.
+            You can see the bare bones of the website 
+            <a href="http://dj183bursley.herokuapp.com/" style="color: #0000EE;" target="_blank">here.</a>
         </p>
+
+
+        <div class="float-left">
+            <div class="split one-third">
+                <br>
+                <h3>The Game</h3>
+                <p>
+                    DJ 183 is a web application that runs a song-guessing game. To the right you will see the page 
+                    that displays the directions for the user to read and follow.  In this game, the user is given an 
+                    audio clip of a song based on their chosen genre and are presented with four options 
+                    to guess the name and artist of the song. 
+                </p>
+                <br><br>
+
+                <h3>Home Page</h3>
+                <p>
+                    This is the main page. Here, the user chooses a genre from a dropdown list of genres. After the user 
+                    chooses a genre, they are redirected to the first question.
+                </p>
+                <br><br>
+
+                <h3>Song Selection</h3>
+                <p>
+                    During each question, the user is given a 30-second-long clip of a song based on their selected genre. 
+                    Then, the user guesses which song title and artist they believe to be correct and clicks the check  
+                    answer button.  The correct song, its audio clip, and the other options are all obtained through 
+                    <a href="https://github.com/guoguo12/billboard-charts" style="color: #0000EE;" target="_blank">a public API</a> 
+                    for python applications.
+                </p>
+
+                
+                <br>
+            </div>
+            <div class="split two-thirds">
+                <br><br>
+                <img class="image-diagram" src="../../images/dj-183/1-instructions.JPG"></img>
+                <img class="image-diagram" src="../../images/dj-183/1-homepage.JPG"></img>
+                <img class="image-diagram" src="../../images/dj-183/2-guess.JPG"></img>
+                <img class="image-diagram" src="../../images/dj-183/3-check.JPG"></img>
+                <img class="image-diagram" src="../../images/dj-183/4-correct.JPG"></img>
+                <img class="image-diagram" src="../../images/dj-183/6-resetscore.JPG"></img>
+                <img class="image-diagram" src="../../images/dj-183/7-leaderboard.JPG"></img>
+                <img class="image-diagram" src="../../images/dj-183/8-integrations.JPG"></img>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
