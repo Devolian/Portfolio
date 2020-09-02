@@ -2,43 +2,35 @@ html, body, h1, h2, h3, h4, h5, p, a {
     font-family: 'Quicksand';
 }
 
-.main hr {
+.tabcontent hr {
     width: 90%;
     padding-bottom: 3%;
 }
 
-.main {
-    height: 100%;
-    position: absolute;
-    background-color: #f0efe9;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 100%;
-}
-
-.main h1 {
+.tabcontent h1 {
     text-align: center;
     font-weight: bold;
     font-family: 'IBTR';
-    font-size: 3.5vw;
+    font-size: 3vw;
     padding: 4%;
     color: #4e4e4e;
 }
 
-.main h3 {
+.tabcontent h3 {
     text-align: center;
     font-weight: bold;
     font-family: 'IBTR';
     padding: 2%;
     color: #4e4e4e;
+    font-size: 1.5vw;
 }
 
-.main p {
-    font-size: 1.5vw;
+.tabcontent p {
+    font-size: 1.3vw;
     color: #4e4e4e;
 }
 
-.main a {
+.tabcontent a {
     font-size: 1.5vw;
     color: #4e4e4e;
 }
@@ -60,13 +52,13 @@ html, body, h1, h2, h3, h4, h5, p, a {
 .headerpanel h1 {
     padding: 2%;
     font-weight: bold;
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-family: 'IBTR';
     color: #4e4e4e;
 }
 
 .headerpanel p {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     padding-bottom: 2.5%;
     font-family: 'IBTR';
     color: #6b6b6b;
@@ -141,7 +133,7 @@ label {
 .send-button {
     background-color: #e0e0de;
     color: #616161;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     padding: 0.5% 2% 0.5% 2%;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -154,15 +146,15 @@ label {
 }
 
 .embed-pdf {
-    margin-left: 18%;
-    margin-bottom: 5%;
-    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 135%;
+    margin-bottom: 20%;
 }
 
 .image-diagram {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-left: 10%;
     padding-bottom: 5%;
 }
 
@@ -193,6 +185,35 @@ body::-webkit-scrollbar-thumb {
     -o-animation: fadeIn2 ease-in 2s;
     -ms-animation: fadeIn2 ease-in 2s;
 }
+
+.img-comp-container {
+    position: relative;
+    height: 200px; /*should be the same height as the images*/
+  }
+  
+  .img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .img-comp-img img {
+    display: block;
+    vertical-align: middle;
+  }
+  
+  .img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
 
 @keyframes fadeIn {
 0% { opacity:0; }

@@ -1,0 +1,151 @@
+html, body, h1, h2, h3, h4, h5, p, a {
+    font-family: 'Quicksand';
+}
+
+/* Monitor */
+@media screen and (min-width:451px) {
+
+    .dropbtn {
+        background-color: #e0e0de;
+        color: #4e4e4e;
+        font-size: 2vw;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+        padding: 3%;
+        font-weight: bold;
+    }
+    
+    .dropbtn:hover {
+        background-color: #d6d6d3;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #e0e0de;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: #616161;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .show {
+        display:block;
+    }
+
+    .body-frame {
+        width: 86%
+    }
+
+    .tabcontent {
+        display: none;
+        margin-left: 15%;
+        width: 84%;
+        float: left;
+
+        height: 100%;
+        background-color: #f0efe9;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: absolute;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 14vw;
+        position: fixed;
+        float: left;
+        background-color: #e0e0de;
+        overflow-x: hidden;
+        padding-top: 20px;
+        font-family: 'Quicksand'
+    }
+
+    .sidebar hr {
+        width: 70%;
+    }
+
+    .menu-button {
+        background-color: #e0e0de;
+        color: #616161;
+        font-size: 1.6vw;
+        padding: 3%;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+    }
+
+    .menu-button:focus {
+        font-weight: bold;
+    }
+
+    .menu-list-button {
+        background-color: #e0e0de;
+        color: #616161;
+        font-size: 1.1vw;
+        padding: 3%;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+    }
+
+    .sidebar button:focus {
+        border: none;
+        outline: none;
+    }
+
+    .sidebar button:hover {
+        background-color: #d6d6d3;
+    }
+
+    .dropdown-content button:focus {
+        font-weight: bold;
+    }
+
+    .profile-img {
+        border-radius: 50%;
+        width: 65%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .dropdown-img {
+        width: 12%;
+        height: auto;
+        opacity: 0.65;
+    }
+
+    .main-page {
+        margin-left: 14%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+@font-face {
+    font-family: 'IBTR';
+    src: url("../fonts/imperln.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/imperln.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/imperln.otf") format("opentype"), /* Open Type Font */
+      url("../fonts/imperln.svg") format("svg"), /* Legacy iOS */
+      url("../fonts/imperln.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("../fonts/imperln.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/imperln.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
