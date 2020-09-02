@@ -16,6 +16,8 @@ function openTab(pageName, elmnt) {
 
   // Show the specific tab content
   document.getElementById(pageName).style.display = "block";
+
+  window.scrollTo(0, 0);
 }
 /**
 function slideTab(increment, elmnt) {
