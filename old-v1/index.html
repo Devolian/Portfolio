@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<title>Devon Doyle</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/page.css">
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/tablink.js"></script>
+
+    <link rel="icon" href="images/devon_suit.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <link rel="stylesheet" href="lib/BeerSlider.css">
+</head>
+
+<body style="background-color: #f0efe9;">
+
+    <div class="sidebar">
+        <a href="../index.html"><img class="profile-img" src="images/devon_suit.png"></img></a>
+        <br><hr>
+        <button class="menu-button" onclick="openTab('home', this)" id="defaultOpen">Home</button>
+        <button class="menu-button" onclick="openTab('resume', this)">Resume</button>
+        <button class="menu-button" onclick="openTab('contact', this)">Contact</button>
+        <hr>
+        <div class="dropdown">
+            <button onclick="dropdown()" class="dropbtn">Projects <img class="dropdown-img" id="projects" src="images/rightarrow.png"></img></button>
+            <div id="dd" class="dropdown-content">
+                <button class="menu-list-button" onclick="openTab('neuralnet', this)">Neural Network</button>
+                <button class="menu-list-button" onclick="openTab('motionprofile', this)">Motion Profile Mapper</button>
+                <!--<button class="menu-list-button" onclick="openTab('dj183', this)">Song Guesser Web App</button>-->
+                <button class="menu-list-button" onclick="openTab('websites', this)">Custom Websites</button>
+                <!--<a href="pages/projects/tweet.html" target="page"><button class="menu-list-button">Tweet Aggregator</button></a>-->
+            </div>
+        </div>
+        <hr>
+        <a href="https://github.com/DevonRD" target="_blank"><button class="menu-button">My Github Page</button></a>
+    </div>
+
+    <div id="home" class="tabcontent">
+        <div class="main">
+            <div class="fade-in">
+                <br>
+                <div class="headerpanel">
+                    <h1>Devon Doyle</h1>
+                    <p>Welcome to my portfolio!</p>
+                </div>
+            </div>
+            <br>
+            <div class="fade-in-delay">
+                <p style="text-align:center">
+                    This is the old version of my website from when I first learned how to write HTML and CSS. Click my 
+                    picture to go back to the new version!
+                    <br><br>
+                    I'm a student of the University of Michigan class of 2022. Go Blue! <br>I created this portfolio website 
+                    from scratch as a project to learn the basics of HTML, CSS, and JavaScrpit.                     
+                    <br><br>
+                    I am a dedicated student pursuing Bachelor's degrees in Computer Science 
+                    and Economics. I have experience in competitive leadership, critical thinking, strategizing, and project 
+                    coordination. I am actively seeking professional connections and experience via internships.
+                    Check out some of my projects under the "Projects" dropdown.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="resume" class="tabcontent">
+        <h1>
+            Resume
+            <a href="docs/Devon_Doyle_Resume_2021-Fall.pdf" target="_blank" download>
+                <img class="download-img" src="images/download.png"></img>
+            </a>
+        </h1>
+        <div class="embed-pdf">
+            <embed src="docs/Devon_Doyle_Resume_2021-Fall.pdf#view=FitH" width="100%" height="100%" />
+        </div>
+        <hr>
+    </div>
+
+    <div id="contact" class="tabcontent">
+        <div class="main center-text">
+            <div class="float-left full-width">
+                <h1>Contact</h1>
+                <hr>
+            </div>
+    
+            <div class="float-left full-width">
+                <div class="split one-third">
+                    <h3>School Email (preferred)</h3>
+                    <p>
+                        devonrd@umich.edu
+                    </p>
+                </div>
+                <div class="split one-third">
+                    <h3>Personal Email</h3>
+                    <p>
+                        devondoyle@outlook.com
+                    </p>
+                    <br><br>
+                </div>
+                <div class="split one-third">
+                    <h3>Cell Phone</h3>
+                    <p>
+                        586 - 216 - 6198
+                    </p>
+                </div>
+            </div>
+            <div class="float-left full-width">
+                <p>Feel free to contact me by any means.  Also, visit my LinkedIn page!</p>
+                <br>
+                <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="devon-doyle">
+                    <a class="LI-simple-link" href='https://www.linkedin.com/in/devon-doyle?trk=profile-badge'>Devon Doyle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="neuralnet" class="tabcontent">
+        <div class="main">
+            <div class="float-left">
+                <h1>Evolutionary  Neural  Network</h1>
+                <hr>
+                <p>
+                    As an ongoing independent project from late high school, I decided to program an 
+                    artificially-evolving neural network simulator using basic creatures in a predefined environment.
+                    I took inspiration from several other community programmers who made similar programs.  This was my first
+                    attempt at using a neural network to facilitate fitness-based evolution.
+                </p>
+                <br>
+            </div>
+
+            <div class="float-left">
+                <div class="split half">
+                    <br>
+                    <div id="beer-slider" class="beer-slider" data-beer-label="Generated World">
+                        <img src="images/map.PNG" alt="">
+                        <div class="beer-reveal" data-beer-label="Input Image">
+                          <img src="images/map1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="split half" style="padding-left: 5%;">
+                    <br>
+                    <h3>The Environment</h3>
+                    <p>
+                        The environment of the simulation is a 100 by 100 grid of tiles, generated by a user-created .png image of 
+                        the desired layout.  The program reads the pixels' colors and decides if it is a water or land tile. 
+                        The example shown here is a map that is mostly covered with land, with some 
+                        minor water bodies providing boundaries and obstacles. Each tile contains a certain amount of food, a regeneration 
+                        rate, and a cooldown timer for restarting the food regeneration process after it is completely depleted to 
+                        discourage stagnant creatures.
+                        <br><br>
+                        Each tile can either be land or water.  Water tiles have no food and no regeneration, so it is extremely 
+                        disadvantageous for a creature to remain in the water for a long period of time. The goal of this is 
+                        to encourage the evolution of water-avoidant traits.
+                        <br><br><br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="float-left">
+                <div class="split one-third">
+                    <br><br>
+                    <img class="image-diagram" src="images/creature.PNG"></img>
+                </div>
+                <div class="split two-thirds" style="padding-left: 5%;">
+                    <h3>Meet The Creatures!</h3>
+                    <p>
+                        Shown here is an example of a creature in the simulator.  Each creature has several sensors, which help it 
+                        identify certain aspects of the environment, like the amount of food around it or if there is another 
+                        creature nearby.  These sensors are the source of input to the creature's neural network and help determine 
+                        what actions the creature will take.
+                        <br><br>
+                        Creatures that are successful at staying alive and feeding can produce offspring with slightly mutated genes, 
+                        which imitates random genetic variation in humans.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="float-left">
+                <div class="split half" style="padding-right: 5%;">
+                    <h3>Neural Network Design</h3>
+                    <p>
+                        Each creature’s intelligence is determined by its internal neural network system. The values of the inputs and 
+                        hidden layers represent the neurons, while the connections between them represent the axons of the network. 
+                        A network of n countable neuron layers must have n - 1 axon layers. This closely resembles neural interaction 
+                        in the human nervous system.
+                        <br><br>
+                        My simulation uses a feedforward neural nework design.  In a feedforward design, input values are multiplied, 
+                        summed, and run through a sigmoid function into hidden layers of values, which are then multiplied, summed, 
+                        and run through sigmoid functions between each other as needed and finally into an output layer of values.
+                        <br><br>
+                        To the right is a visualization of my network design for these creatures.  The neuron values are shown as 
+                        numbers, with axon lines ranging from black (negative axon) to white (positive axon). Empty values are spaces 
+                        left for future additions.
+                    </p>
+                </div>
+                <div class="split half">
+                    <br><br><br>
+                    <img class="image-diagram" src="images/neuron-illustration.jpg"></img>
+                    <br><br><br>
+                    <img class="image-diagram" src="images/neural_net.PNG"></img>
+                </div>
+            </div>
+    
+            <div class="float-left">
+                <h3>Feedback System</h3>
+                <p>
+                    In order for actual evolution in behavior to occur, some form of feedback from the environment is required. 
+                    In this model, environmental fitness is the source of feedback. Creatures with a greater suitability to survive 
+                    (fitness) are more likely to reproduce, passing on their network qualities. Over time, the networks of 
+                    more-suitable creatures will dominate the landscape, and newly-developed traits among those suitable creatures 
+                    will cause disruptions in any equilibrium that is established, leading to further refinement of the network pool 
+                    as competition for resources drives evolution.
+                    <br><br>
+                </p>
+            </div>
+    
+            <div class="float-left">
+                <div class="split one-third">
+                    <img class="image-diagram" src="images/avoid_water.gif"></img>
+                </div>
+                <div class="split two-thirds"  style="padding-left: 5%;">
+                    <h3>Observed Traits</h3>
+                    <p>
+                        One of the most prevalent traits that can be seen in the simulator is the avoidance of disadvantageous 
+                        tiles. Many creatures, in a map that includes bodies of water, will adapt to avoid water and tiles with 
+                        little food.  Being in these areas is disadvantageous because, while the creatures constantly decay, 
+                        they will have no source of food.
+                        <br><br>
+                        Here is an example of a creature with a neural network that learned to change direction or avoid water 
+                        or foodless tiles completely when it encountered them.  Some creatures tend to back away, some choose to 
+                        speed up to get through, and some exhibit a combination of the two.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="float-left">
+                <div class="split half" style="padding-right: 5%;">
+                    <h3>Creature Count and Gene Evolution</h3>
+                    <p>
+                        As the simulation runs, it keeps track of how many creatures were alive and their genes through time. Creatures 
+                        will similar neural networks will have similar colors for easy visual identification. Once certain 
+                        suitable creatures grow in population to dominate the environment, resources become scarce and the population 
+                        decreases, giving rise to new, more suitable populations.
+                        <br><br>
+                    </p>
+                </div>
+                <div class="split half">
+                    <br><br><br>
+                    <img class="image-diagram" src="images/timeline.PNG"></img>
+                </div>
+            </div>
+    
+            <div class="float-left">
+                <p>
+                    In this example, dark green and dark pink/purple creatures dominated for a period of time. Once resources ran out, 
+                    a period of turbulence followed as other more-suitable populations grew out of the scarcity, leading to descendants of the 
+                    pink/purple populations to grow.  Once those descendants grew to capacity and used up the newly available resources, 
+                    more turbulence ensued which gave rise to yet another more-suitable descendant population of the purple neural 
+                    network traits.  This process repeats over and over again and is the driving force behind the neural network evolution.
+                    Watching the graphs reflecting this phenomenon in real time is truly fascinating, and I am very proud of these results!
+                    <br><br>
+                </p>
+                
+            </div>
+    
+            <div class="float-left">
+                <div class="split less-half">
+                    <h3>Limitations</h3>
+                    <p>
+                        Although this program has successfully achieved basic creature instincts, this network design has some important limitations. 
+                        This is evolution with <b><i>fixed topologies</i></b>. In other words, since every creature has the same neural network 
+                        structure, significant innovation is extremely difficult and time consuming. Stay tuned, as I am currently working on a 
+                        project with neural networks that don't only evolve through numerical values, but in their very structure as well!
+                        <br><br><br>
+                    </p>
+                </div>
+                <div class="float-right less-half">
+                    <h3>Try it Yourself!</h3>
+                    <p>
+                        If you are interested, feel free to download and run this simulation for yourself. You can find it on my GitHub page, 
+                        which is linked in the menu. Run the "NeuralNetLatest.jar" file. I'm sure you will enjoy watching and 
+                        interacting with the creatures of the simulation!
+                        <br><br><br><br>
+                    </p>
+                </div>
+            </div>         
+        </div>
+    </div>
+
+    <div id="motionprofile" class="tabcontent">
+        <div class="main">
+            <div class="float-left">
+                <h1>Motion Profile Mapper</h1>
+                <hr>
+                <p>
+                    In my final year of high school, as lead programmer of FRC Team 3539, my main goal was to develop an
+                    application
+                    that creates paths on the field that the robot could read and follow based solely on user input.
+                    In the first 15 seconds of every game, the robot needed to move by itself, and instead of hard-coding
+                    motor speeds and times manually, this application guided the robot along a set path. This was easier to
+                    use and allowed us
+                    to be more versatile during competitions, where the ability to change based on your teammates' needs was
+                    essential.
+                    I am extremely grateful to our mentor, Mr. VanCamp, who provided framework and guidance and was absolutely 
+                    essential in our journey to reaching the end product.
+                </p>
+                <br>
+            </div>
+    
+            <div class="float-left">
+                <div class="split half">
+                    <br>
+                    <img class="image-diagram" src="images/profile_demo.gif"></img>
+                </div>
+                <div class="split half">
+                    <h3>The User Interface</h3>
+                    <p style="padding-left: 5%;">
+                        In the game for 2018, there were obstacles on the field (shown as green, red, and yellow boxes) that
+                        needed to be traversed
+                        autonomously. We could only stand back and watch as the robot moved on its own, without any human
+                        input. All
+                        robot movement was guided by the paths generated in this program, as seen in the demonstration.
+                        <br><br>
+                        The user creates points on the chart that the robot should follow, and the program uses those points
+                        to create two
+                        separate paths, one for each side of the robot.
+                        <br><br><br>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="float-left">
+                <div class="split half">
+                    <h3>Velocity Calculation</h3>
+                    <p style="padding-right: 5%;">
+                        After two splines are generated for the left and right sides of the robot, the application then
+                        creates a complete
+                        guide of velocity values that the robot should apply to its motors in order to accurately follow the
+                        path. This was
+                        an especially difficult task, since the motors have physical limitations beyond what might be
+                        mathematically possible.
+                        <br><br>
+                        Some issues that we had to work around were the minor physical differences between motors, the need
+                        to ramp-up and ramp-down
+                        velocities for optimal performance (including battery saving), and possible variations in actual
+                        field measurements from competition to competition.
+                        <br><br>
+                        Shown here are the corresponding velocity maps for the
+                        <a style="color: #2d30cc; font-weight: bold;">left</a>
+                        and
+                        <a style="color: #c23b3b; font-weight: bold;">right</a>
+                        sides of the robot. This data was generated from the demonstrated path above! Turns are indicated
+                        by an increase in velocity for one side and a decrease in velocity for the other side.
+                        <br><br>
+                    </p>
+                </div>
+                <div class="split half">
+                    <br><br>
+                    <img class="image-diagram" src="images/profile_velocity.PNG"></img>
+                </div>
+            </div>
+    
+            <div class="float-left">
+                <div class="split less-half">
+                    <h3>Competition Versatility</h3>
+                    <p>
+                        During competition, we were often paired with teammates that had autonomous plans that conflicted
+                        with ours.
+                        For example, both of our robot paths could end up colliding during the game, which could break the
+                        robots. In those cases,
+                        instead of having to re-code, debug, and test new plans (which was impossible given competition time
+                        constraints), we simply opened
+                        up the motion profile mapper, drew a new path according to their needs, and had everything ready to
+                        go within minutes. This
+                        proved to be critical to our success in many matches.
+                        <br><br>
+                    </p>
+                </div>
+                <div class="float-right less-half">
+                    <h3>Proper Programming</h3>
+                    <p>
+                        One major difference between this project and my other projects at the time was the necessity of
+                        programming professionally.
+                        Upon graduation, this application was going to be passed down to future programmers on the team to
+                        improve and maintain for years
+                        to come. Because of that, I needed to make sure that all code that I wrote was clean, easy to
+                        follow, and properly documented. This,
+                        of course, is much easier said than done. However, this was where I developed most of my good
+                        programming practices, which have
+                        influenced the structures of my future projects. This application is still used by team programmers
+                        today!
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+    
+            <div class="float-left">
+                <p>
+                    Use the menu link to my GitHub page to find the version of the mapper that I last modified before
+                    graduating. Feel free to download
+                    it and test it out!
+                    Here you can watch our robot following a motion profile path live at the FRC State Championship in
+                    Michigan. Watch team 3539 for the
+                    first 15 seconds!
+                </p>
+                <a href="https://youtu.be/NRdkGwCWpzM" style="color: #0000EE; padding: 0;" target="_blank" class="yt-link">Performance
+                    Video</a>
+                <br><br><br>
+            </div>
+    
+        </div>
+    </div>
+
+    <div id="dj183" class="tabcontent">
+        <div class="main">
+            <h1>Song Guesser Web Application</h1>
+            <hr>
+            <p>
+                In my first year at the University of Michigan, my team and I created a website application 
+                as a final project called "DJ 183."  The website consisted of several important programming skills: 
+                a back-end python server, a front-end website with HTML, information obtained through a public API, and 
+                database utilization. The implementation and features of this project were entirely up to our 
+                group. Unfortunately, this is no longer online for public use to prevent future students from 
+                stealing our code and using it as their own work. However, the code is stored in a private 
+                GitHub repository on my GitHub page (linked in the menu), so I can share it upon request.
+                You can see the bare bones of the website 
+                <a href="http://dj183bursley.herokuapp.com/" style="color: #0000EE;" target="_blank">here.</a>
+            </p>
+    
+    
+            <div class="float-left">
+                <div class="split one-third" style="padding-right: 5%;">
+                    <br>
+                    <h3>The Game</h3>
+                    <p>
+                        DJ 183 is a web application that runs a song-guessing game. To the right you will see the page 
+                        that displays the directions for the user to read and follow.  In this game, the user is given an 
+                        audio clip of a song based on their chosen genre and are presented with four options 
+                        to guess the name and artist of the song. 
+                    </p>
+                    <br><br>
+    
+                    <h3>Home Page</h3>
+                    <p>
+                        This is the main page. Here, the user chooses a genre from a dropdown list of 
+                        <a href="https://www.billboard.com/" style="color: #0000EE;" target="_blank">Billboard</a> 
+                        genres. After the user 
+                        submits a genre, they are redirected to the first question.  This project uses several frameworks to 
+                        integrate the back-end python and the front-end html.  A few notable ones are 
+                        <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color: #0000EE;" target="_blank">Flask</a> 
+                        and 
+                        <a href="https://jinja.palletsprojects.com/en/2.11.x/" style="color: #0000EE;" target="_blank">Jinja</a>, 
+                        which made the project much easier to develop from a then-limited knowledge of python.
+                    </p>
+                    <br><br>
+    
+                    <h3>Song Selection</h3>
+                    <p>
+                        During each question, the user is given a 30-second-long clip of a song based on their selected genre. 
+                        Then, the user guesses which song title and artist they believe to be correct and clicks the check  
+                        answer button.  The correct song, its audio clip, and the other options are all obtained through 
+                        <a href="https://github.com/guoguo12/billboard-charts" style="color: #0000EE;" target="_blank">a public Billboard API</a> 
+                        for python applications.
+                    </p>
+    
+                    
+                    <br>
+                </div>
+                <div class="split two-thirds">
+                    <br><br>
+                    <img class="image-diagram" src="images/dj-183/1-instructions.JPG"></img>
+                    <img class="image-diagram" src="images/dj-183/1-homepage.JPG"></img>
+                    <img class="image-diagram" src="images/dj-183/2-guess.JPG"></img>
+                    <img class="image-diagram" src="images/dj-183/3-check.JPG"></img>
+                    <img class="image-diagram" src="images/dj-183/4-correct.JPG"></img>
+                    <img class="image-diagram" src="images/dj-183/6-resetscore.JPG"></img>
+                    <img class="image-diagram" src="images/dj-183/7-leaderboard.JPG"></img>
+                    <img class="image-diagram" src="images/dj-183/8-integrations.JPG"></img>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div id="websites" class="tabcontent">
+        <div class="main">
+            <div class="float-left">
+                <h1>Custom-Designed Websites</h1>
+                <hr>
+                <p>
+                    I have offered my programming skills to some local businesses in the Romeo, Michigan area to create unique, 
+                    detailed websites to their liking that suit their businesses and help them better connect to their clients 
+                    and the community.  Here are some links to those websites that I created from scratch.
+                </p>
+                <br>
+            </div>
+    
+            <div style="float: left;">
+                <h3>Midwest Stairs / Wolverine Finish Carpentry</h3>
+                <p>
+                    Midwest Stairs (with sister company Wolverine Finish Carpentry) is a local carpentry business that does  
+                    custom interior projects for clients' homes. This website was essential to 
+                    helping them centralize their information and provided accessibility to their business. Done in 
+                    summer 2020, this was the first website I created for a business. The greatest challenge 
+                    for this project was learning how to create a website that functioned and looked professional on both 
+                    mobile and PC devices.
+                </p>
+                <a href="https://midweststairs.com" style="color: #0000EE" target="_blank">midweststairs.com</a>
+            </div>
+            
+            <div style="float: left;">
+                <h3>Currently in Development</h3>
+                <p>
+                    I am currently working on custom portfolio websites for some film students. They will be added here when 
+                    they are complete!
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="lib/BeerSlider.js"></script>
+    <script>var slider = new BeerSlider( document.getElementById("beer-slider"));</script>
+    <script>document.getElementById("defaultOpen").click();</script>
+</body>
+</html>

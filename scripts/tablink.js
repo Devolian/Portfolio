@@ -9,15 +9,16 @@ function openTab(pageName, elmnt) {
   }
 
   // Remove the background color of all tablinks/buttons
-  tablinks = document.getElementsByClassName("tablink");
+  tablinks = document.getElementsByClassName("tabbutton");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+    tablinks[i].style.backgroundColor = "#5f5a5a";
   }
 
   // Show the specific tab content
-  document.getElementById(pageName).style.display = "block";
+  document.getElementById(pageName).style.display = "inline";
+  document.getElementById(pageName + "Button").style.backgroundColor = "#474343";
 
-  window.scrollTo(0, 0);
+  //window.scrollTo(0, 0);
 }
 /**
 function slideTab(increment, elmnt) {
