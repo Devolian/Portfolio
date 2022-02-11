@@ -9,50 +9,38 @@
     opacity: 0.95;
 }
 
-
-
-.main {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 10;
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
-
-
 
 /* Mobile */
 @media screen and (min-width:0px) {
+    h1 {
+        color: #f0f0f0;
+        font-size: 4vw;
+        font-weight: 300;
+    }
+
+    p {
+        color: #c4c4c4;
+        font-size: 2vw;
+    }
+
     .intro {
         width: 40vw;
         border-radius: 15px;
         text-align: center;
         position: absolute;
-        /*
-        min-width: 300px;
-        min-height: 300px;
-        */
         opacity: 1;
         top: 50%;
         left: 50%;
         transform: translate(-20vw, -22vw);
         padding: 4vw;
         z-index: 10;
-    }
-    .text-name {
-        font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        padding-top: 3%;
-        color: #f0f0f0;
-        font-size: 4vw;
-        margin: 0;
-        font-weight: 300;
-    }
-    
-    .text-bio {
-        font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        color: #c4c4c4;
-        font-size: 2vw;
-        padding-bottom: 5%;
-        margin: 0;
     }
 
     .intro i {
@@ -68,8 +56,24 @@
         width: auto;
         filter: brightness(0) invert(1);
         left: 50%;
-        top: 80%;
+        top: 78vh;
         transform: translate(-3vh, 0vh);
+    }
+
+    .page {
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        width: 100%;
+        height: 100%;
+        opacity: 0.92;
+        padding-top: 10vh;
+
+        text-align: center;
+    }
+
+    .page p {
+        max-width: 50vw;
     }
 
     .textpad {
@@ -81,42 +85,55 @@
         width: 80vw;
         min-height: 50vh;
         opacity: 1;
+
+        font-family: 'Courier Prime', monospace;
+        text-align: left;
     }
+}
+
+hr {
+    border: 1px solid white;
+    width: 5%;
+    margin: 0 auto;
 }
 
 /* Monitor */
 @media screen and (orientation:landscape) {
+    h1 {
+        color: #f0f0f0;
+        font-size: 2.2vw;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .page h1 {
+        font-size: 2.5vw;
+        padding-bottom: 6vh;
+    }
+
+    p {
+        color: #c4c4c4;
+        font-size: 1.2vw;
+        margin: 0;
+    }
+
+    .page p {
+        max-width: 50vw;
+        margin-left: 25vw;
+        padding-top: 6vh;
+    }
+
     .intro {
         width: 20vw;
         border-radius: 15px;
         text-align: center;
         position: absolute;
-        /*
-        min-width: 300px;
-        min-height: 300px;
-        */
         opacity: 1;
         top: 50%;
         left: 50%;
-        transform: translate(-10vw, -11vw);
+        transform: translate(-10vw, -13vw);
         padding: 2vw;
         z-index: 10;
-    }
-    .text-name {
-        font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        padding-top: 3%;
-        color: #f0f0f0;
-        font-size: 2vw;
-        margin: 0;
-        font-weight: 300;
-    }
-    
-    .text-bio {
-        font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        color: #c4c4c4;
-        font-size: 1.1vw;
-        padding-bottom: 5%;
-        margin: 0;
     }
 
     .intro i {
@@ -125,25 +142,45 @@
         font-size: 2vw;
     }
 
+    .intro ul {
+        margin: 0;
+        padding-top: 10%;
+    }
+
     .down-arrow {
         position: absolute;
         z-index: 10;
         height: 8vh;
         width: auto;
         filter: brightness(0) invert(1);
-        left: 50%;
-        top: 90%;
-        transform: translate(-4vh, 0vh);
+        left: 50vw;
+        top: 87vh;
+        transform: translate(-4vh, -4vh);
+    }
+
+    .page {
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        width: 100%;
+        opacity: 0.94;
+        padding-top: 10vh;
+        height: 49vh;
+
+        text-align: center;
     }
 
     .textpad {
         position: absolute;
-        z-index: 10;
-        top: 110%;
-        left: 10vw;
         border-radius: 7px;
-        width: 50vw;
+        width: 70vw;
+        height: 90vh;
+        top: 160vh;
+        left: 15vw;
         opacity: 1;
+
+        font-family: 'Courier Prime', monospace;
+        text-align: left;
     }
 
 }
@@ -169,6 +206,9 @@ body {
     padding: 0;
     background-image: url("../images/math.png");
     background-attachment: fixed;
+
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    line-height: 2;
 }
 
 body, main, footer {
@@ -179,30 +219,48 @@ body, main, footer {
     background-color: #2d3a6d;
 }
 
+.primary {
+    background-color: #24305e !important;
+}
+
+.primary-2 {
+    background-color: #1e264e !important;
+}
+
 .secondary {
-    background-color: #374785;
+    background-color: #374785 !important;
 }
 
 .tertiary {
-    background-color: #a8d0e6;
+    background-color: #a8d0e6 !important;
 }
 
+.int {
+    color: #a8d0e6 !important;
+}
 
+.string {
+    color: #f8e9a1 !important;
+}
+
+.bool {
+    color: #f76c6c !important;
+}
+
+.regular {
+    color: #f0f0f0 !important;
+}
 
 .intro img {
     width: 55%;
     height: auto;
     border-radius: 50%;
     transition-duration: 0.25s;
+    padding-bottom: 10%;
 }
 
 .intro img:hover {
     opacity: 70%;
-}
-
-.intro ul {
-    margin: 0;
-    padding-bottom: 2%;
 }
 
 .intro ul > li {
@@ -262,7 +320,6 @@ body, main, footer {
     float: left;
     border: 1px solid #3a3636;
     background-color: #5f5a5a;
-    font-family: 'Courier Prime', monospace;
     font-size: 80%;
     margin: 0;
     color: #f0f0f0;
@@ -300,7 +357,6 @@ body, main, footer {
     padding-right: 15%;
     padding-top: 13.7%;
     color: #858585;
-    font-family: 'Courier Prime', monospace;
     font-size: 85%;
 }
 
@@ -317,29 +373,12 @@ body, main, footer {
 
 .textpad-body a {
     margin: 0;
-    font-family: 'Courier Prime', monospace;
     font-size: 80%;
     float: left;
 }
 
 .indent {
     padding-left: 5%;
-}
-
-.int {
-    color: #a8d0e6 !important;
-}
-
-.string {
-    color: #f8e9a1 !important;
-}
-
-.bool {
-    color: #f76c6c !important;
-}
-
-.regular {
-    color: #f0f0f0 !important;
 }
 
 .footer {
