@@ -197,7 +197,6 @@ hr {
         opacity: 0.94;
         padding-top: 10vh;
         height: 49vh;
-
         text-align: center;
     }
 
@@ -376,7 +375,7 @@ body, main, footer {
 .textpad-linecount {
     border-bottom-left-radius: 10px;
     height: 100%;
-    width: 3%;
+    width: 2.5%;
     padding-right: 0.5%;
     float: left;
 }
