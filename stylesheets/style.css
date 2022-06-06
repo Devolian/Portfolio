@@ -143,6 +143,26 @@ hr {
         padding-top: 6vh;
     }
 
+    .button-container {
+        width: 60%;
+        margin-left: 20%;
+        padding: 2%;
+    }
+
+    .button-container button {
+        float: left;
+        border: none;
+        background-color: transparent;
+        color: #c4c4c4;
+        font-size: 1.1vw;
+        width: 33%;
+        transition: 0.5s;
+    }
+
+    .button-container button:hover {
+        color: white;
+    }
+
     .intro {
         width: 20vw;
         border-radius: 15px;
@@ -195,8 +215,8 @@ hr {
         top: 100%;
         width: 100%;
         opacity: 0.94;
-        padding-top: 10vh;
-        height: 49vh;
+        padding-top: 8vh;
+        height: 48vh;
         text-align: center;
     }
 
