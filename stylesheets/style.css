@@ -403,7 +403,7 @@ body, main, footer {
 .textpad-text {
     border-bottom-right-radius: 10px;
     height: 100%;
-    width: 97%;
+    width: 97.5%;
     float: left;
 }
 
@@ -412,7 +412,7 @@ body, main, footer {
 }
 
 .indent {
-    padding-left: 1%;
+    padding-left: 5px;
 }
 
 .footer {
