@@ -61,8 +61,8 @@ img {
 hr {
     border: 1px solid white;
     margin: 0 auto;
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 h1 {
@@ -71,11 +71,11 @@ h1 {
 }
 
 p {
-    color: #c4c4c4;
+    color: #d1d1d1;
 }
 
 /* Mobile */
-@media screen and (min-width:0px) {
+@media screen and (orientation:portrait) {
     h1 {
         font-size: 7vw;
     }
@@ -84,11 +84,11 @@ p {
         width: 15vw;
     }
 
-    p {
+    p, a, details, ol, li {
         font-size: 4vw;
     }
 
-    .page p {
+    .column.desc p {
         max-width: 80vw;
         margin-left: 10vw;
     }
@@ -151,23 +151,66 @@ p {
     .page {
         top: 175vh;
         opacity: 0.92;
-        padding-top: 10vh;
-        height: 49vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
 
-    .button-container {
+    .row {
+        flex-direction: column;
+    }
+
+    .desc {
         width: 100%;
+        height: 24vh;
+    }
+    
+    .info {
+        width: 100%;
+        height: 72vh;
+    
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
-    .button-container button {
-        font-size: 2.8vw;
+    #landscape-buttons {
+        display: none;
+    }
+
+    #portrait-buttons {
+        display: block;
+    }
+
+    .column.desc select {
+        text-align: center;
+        border: none;
+        background-color: rgba(216, 222, 255, 0.438);
+        color: white;
+        width: 80vw;
+        margin: auto;
+        font-size: 3vh;
+        margin-bottom: 1vh;
+        transition: 0.2s;
+        padding: 1vh;
+        border-radius: 10px;
+    }
+
+    .column.desc option {
+        background-color: #1e264e;
+    }
+
+    .info h2 {
+        font-size: 5vw;
+    }
+
+    .info h3 {
+        font-size: 4vw;
     }
 }
 
 /* Monitor */
 @media screen and (orientation:landscape) {
     h1 {
-        font-size: 2.3vw;
+        font-size: 5vh;
         margin: 0;
     }
 
@@ -176,32 +219,14 @@ p {
     }
 
     p {
-        font-size: 1.3vw;
-    }
-
-    .page p {
-        max-width: 50vw;
-        margin-left: 25vw;
-    }
-
-    .button-container {
-        width: 60%;
-        margin-left: 20%;
-    }
-
-    .button-container button {
-        font-size: 1.1vw;
-    }
-
-    .button-container button:hover {
-        color: white;
+        font-size: 3vh;
     }
 
     .intro {
-        top: 22vh;
-        left: 23vw;
-        width: 20vw;
-        padding: 2vw;
+        top: 22vmin;
+        left: calc(23vw - (40vmin / 2));
+        width: 40vmin;
+        padding: 4vmin;
     }
 
     .textpad {
@@ -209,18 +234,18 @@ p {
         min-width: 600px;
         height: 70vh;
         top: 12vh;
-        left: 57vw;
+        left: 54vw;
         font-size: 1.7vmin !important;
     }
 
     .down-arrow {
-        width: 4vw;
-        left: 48vw;
+        width: 8vh;
+        left: 41vw;
         top: 88vh;
     }
 
     .intro i {
-        font-size: 2vw;
+        font-size: 4.5vh;
     }
 
     .intro img {
@@ -265,8 +290,59 @@ p {
     .page {
         top: 100%;
         opacity: 0.94;
-        padding-top: 8vh;
-        height: 48vh;
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .desc {
+        width: 35%;
+        max-height: 100%;
+    }
+    
+    .info {
+        width: 65%;
+        height: 88vh;
+    
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #landscape-buttons {
+        display: block;
+    }
+
+    #portrait-buttons {
+        display: none;
+    }
+
+    .column.desc button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        width: 100%;
+        font-size: 3vh;
+        margin-bottom: 1vh;
+        transition: 0.2s;
+        padding: 1vh;
+        border-radius: 10px;
+    }
+    
+    .column.desc button:hover {
+        background-color: rgba(221, 226, 255, 0.247);
+    }
+    
+    .column.desc button:focus {
+        outline: none;
+    }
+    
+    .column.desc button.selected {
+        background-color: rgba(216, 222, 255, 0.438);
     }
 }
 
@@ -277,9 +353,9 @@ html, body, main, h1, h2, h3, h4, h5, p, a {
 }
 */
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
-  }
+}
 
 html {
     scroll-behavior: smooth;
@@ -287,14 +363,31 @@ html {
 
 html, body {
     height: 100%;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+}
+
+#project-info ::-webkit-scrollbar {
+    all:unset !important;
+}
+
+#project-info {
+    -ms-overflow-style: auto;
+    scrollbar-width: auto;
+}
+
+#project-info p, #project-info h1 {
+    color: black;
+}
+
+#project-info h2, #project-info h3 {
+    font-weight: bold;
 }
 
 body {
     padding: 0;
     background-image: url("../images/math.png");
     background-attachment: fixed;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     line-height: 2;
@@ -444,49 +537,30 @@ body, main, footer {
     z-index: 10;
     width: 100%;
     text-align: center;
-}
-
-.button-container {
-    padding: 2%;
-}
-
-.button-container button {
-    float: left;
-    border: none;
-    background-color: transparent;
-    color: #c4c4c4;
-    width: 33%;
-    transition: 0.5s;
-}
-
-.button-container button:hover {
-    color: white;
+    height: 100%;
 }
 
 .indent {
     padding-left: 5px;
 }
 
-.footer {
-    text-align: center;
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.link {
-    text-decoration: underline;
+#project-info {
+    padding: 5%;
+    border-radius: 5px;
+    background-color: #f2f4ff;
+    overflow-y: scroll;
+    text-align: left;
+    max-height: 100%;
 }
 
-/*
-body::-webkit-scrollbar {
-    width: 10px;
+#project-info p {
+    font-size: 2vh;
 }
-
-body::-webkit-scrollbar-track {
-    background: #2d3a6d; 
-  }
-
-body::-webkit-scrollbar-thumb {
-    background-color: #374785; 
-  } */
 
 .fade-in {
     animation: fadeIn ease-in 1.5s;

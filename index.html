@@ -22,6 +22,7 @@
     <script src="lib/particles.js"></script>
     <link rel="stylesheet" href="stylesheets/style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="scripts/tablink.js"></script>
     <script src="scripts/scroll.js"></script>
 </head>
@@ -64,26 +65,63 @@
         </ul>
     </div>
 
-    <button onclick="scrollDown('intro-section')"><img class="down-arrow" src="images/down.png" /></button>
+    <button onclick="scrollDown('intro-section')" id="scroll-button">
+        <img class="down-arrow" src="images/down.png" />
+    </button>
 
     
     <div id="intro-section" class="page primary-2">
-        <h1>Hi, I'm Devon!</h1>
-        <hr>
-        <p>
-            I love to express my creativity through code. Check out some of my 
-            projects!
-        </p>
-        <div class="button-container">
-            <a href="https://github.com/DevonRD/NeuralNetwork" target="_blank">
-                <button>Neural Network</button>
-            </a>
-            <a href="https://github.com/DevonRD/Motion-Profile-Mapper-2018" target="_blank">
-                <button style="border-left: 1px solid #c4c4c4;">Motion Profile Mapper</button>
-            </a>
-            <a href="https://devond.dev/gpa-calculator/" target="_blank">
-                <button style="border-left: 1px solid #c4c4c4;">GPA Calculator</button>
-            </a>
+        <div class="row">
+            <div class="column desc">
+                <br>
+                <h1>Hi, I'm Devon!</h1>
+                <br>
+                <p>
+                    Check out some of my projects!
+                </p>
+                <div id="landscape-buttons">
+                    <hr>
+                    <button
+                        id="gpa-calculator"
+                        onclick="projectClick('gpa-calculator'); this.blur();">
+                        GPA Calculator
+                    </button>
+                    <button
+                        id="wiki-revamp"
+                        onclick="projectClick('wiki-revamp'); this.blur();">
+                        EECS 441 Wiki Revamp
+                    </button>
+                    <button
+                        id="NeuralNetwork"
+                        onclick="projectClick('NeuralNetwork'); this.blur();">
+                        Neural Network
+                    </button>
+                    <button
+                        id="Motion-Profile-Mapper-2018"
+                        onclick="projectClick('Motion-Profile-Mapper-2018'); this.blur();">
+                        Motion Profile Mapper
+                    </button>
+                </div>
+                <div id="portrait-buttons">
+                    <select onchange="updateSelector();" id="project-selector">
+                        <option value="gpa-calculator">
+                            GPA Calculator
+                        </option>
+                        <option value="wiki-revamp">
+                            EECS 441 Wiki Revamp
+                        </option>
+                        <option value="NeuralNetwork">
+                            Neural Network
+                        </option>
+                        <option value="Motion-Profile-Mapper-2018">
+                            Motion Profile Mapper
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="column info">
+                <div id="project-info"></div>
+            </div>
         </div>
     </div>
     <div class="textpad">
@@ -224,7 +262,7 @@
                 <span class="indent regular">&emsp;&emsp;&emsp;"Season":</span>
                 <span class="string">"Summer"</span><span class="regular">,</span>
                 <br>
-                <span class="indent regular">&emsp;&emsp;&emsp;"Worked With": [</span><span class="string">"C#"</span><span class="regular">,&nbsp;</span><span class="string">"C++"</span><span class="regular">,&nbsp;</span><span class="string">"REST API"</span><span class="regular">,&nbsp;</span><span class="string">"WinForms"</span><span class="regular">]</span>
+                <span class="indent regular">&emsp;&emsp;&emsp;"Used": [</span><span class="string">"C#"</span><span class="regular">,&nbsp;</span><span class="string">"C++"</span><span class="regular">,&nbsp;</span><span class="string">"REST API"</span><span class="regular">,&nbsp;</span><span class="string">"WinForms"</span><span class="regular">]</span>
                 <br>
                 <span class="indent regular">&emsp;&emsp;}</span>
                 <br>
@@ -277,7 +315,7 @@
                 <br>
                 <span class="indent regular">&emsp;"Novice": [</span><span class="string">"JavaScript"</span><span class="regular">,&nbsp;</span><span class="string">"HTML/CSS"</span><span class="regular">,&nbsp;</span></span><span class="string">"C"</span><span class="regular">,&nbsp;</span><span class="string">"C#"</span><span class="regular">,&nbsp;</span><span class="string">"R"</span><span class="regular">],</span>
                 <br>
-                <span class="indent regular">&emsp;"Other": [</span><span class="string">"Flask/Jinja"</span><span class="regular">,&nbsp;</span><span class="string">"React"</span><span class="regular">,&nbsp;</span><span class="string">"SQL"</span><span class="regular">,&nbsp;</span><span class="string">"Vue.js"</span><span class="regular">,&nbsp;</span><span class="string">"AWS"</span><span class="regular">] </span>
+                <span class="indent regular">&emsp;"Other": [</span><span class="string">"Flask"</span><span class="regular">,&nbsp;</span><span class="string">"React"</span><span class="regular">,&nbsp;</span><span class="string">"SQL"</span><span class="regular">,&nbsp;</span><span class="string">"Vue.js"</span><span class="regular">,&nbsp;</span><span class="string">"AWS"</span><span class="regular">] </span>
                 <br>
                 <span class="indent regular">}</span>
                 <br>
@@ -293,8 +331,6 @@
             and keep scrolling to see some of my projects! This is a work in progress.
         </p>
     </div>-->
-
-
 
     <script type="text/javascript">
         particlesJS("particles-js", {
@@ -410,7 +446,7 @@
         });
     </script>
     <script>document.getElementById("aboutButton").click();</script>
-
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
